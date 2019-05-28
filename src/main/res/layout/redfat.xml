@@ -1,0 +1,257 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="sanchezartega.facci.rencaronline.fragments.RedFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rootView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/vernuevoq" />
+
+            <ImageView
+                android:id="@+id/image_ariana"
+                android:layout_width="wrap_content"
+                android:layout_height="634dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="-35dp"
+                android:alpha="0.1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ki" />
+
+
+            <Button
+                android:id="@+id/btnAlquila"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="269dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button_background2"
+                android:text="Alquilar"
+                android:textAllCaps="false"
+                android:textColor="#F3F5F7"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="377dp"
+                android:layout_height="370dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="72dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/nombres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/edittelefono"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/transparent"
+                        android:drawableStart="@drawable/ic_drive_eta_black_24dp"
+                        android:drawableLeft="@drawable/ic_drive_eta_black_24dp"
+                        android:drawablePadding="12dp"
+                        android:ems="10"
+                        android:hint="ingrese nombre de auto"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="8dp"
+                        android:textColorHint="#FFF" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="188dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/telefono"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/lnpapellidos"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/transparent"
+                        android:drawableStart="@drawable/ic_drive_eta_black_24dp"
+                        android:drawableLeft="@drawable/ic_drive_eta_black_24dp"
+                        android:drawablePadding="12dp"
+                        android:ems="10"
+                        android:hint="ingrese velocidad"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="8dp"
+                        android:textColorHint="#FFF" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="65dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/apellidos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/lnpapellidos"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/transparent"
+                        android:drawableStart="@drawable/ic_drive_eta_black_24dp"
+                        android:drawableLeft="@drawable/ic_drive_eta_black_24dp"
+                        android:drawablePadding="12dp"
+                        android:ems="10"
+                        android:hint="Ingrese matricula"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="8dp"
+                        android:textColorHint="#FFF" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="129dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/Correo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/transparent"
+                        android:drawableStart="@drawable/ic_drive_eta_black_24dp"
+                        android:drawableLeft="@drawable/ic_drive_eta_black_24dp"
+                        android:drawablePadding="12dp"
+                        android:ems="10"
+                        android:hint="Ingrese modelo"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="8dp"
+                        android:textColorHint="#FFF" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="-1dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/lnpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/transparent"
+                        android:drawableStart="@drawable/ic_drive_eta_black_24dp"
+                        android:drawableLeft="@drawable/ic_drive_eta_black_24dp"
+                        android:drawablePadding="12dp"
+                        android:ems="10"
+                        android:hint="Ingrese año"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="8dp"
+                        android:textColorHint="#FFF" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="60dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/Respassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/transparent"
+                        android:drawableStart="@drawable/ic_drive_eta_black_24dp"
+                        android:drawableLeft="@drawable/ic_drive_eta_black_24dp"
+                        android:drawablePadding="12dp"
+                        android:ems="10"
+                        android:hint="Ingrese año"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="8dp"
+                        android:textColorHint="#FFF" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="358dp"
+                android:layout_height="60dp"
+                android:text="Alquilar auto"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>
+
+
+
+
+</LinearLayout>
